@@ -165,6 +165,7 @@ body {
 }
 .our-work {
   width: 370px;
+  height: 294px;
   position: relative;
 }
 .card-color {
@@ -477,6 +478,8 @@ p {
 .works__overlay {
   position: relative;
   overflow: hidden;
+  width: 370px;
+  height: 294px;
 }
 .works__overlay::before {
   display: inline-block;
