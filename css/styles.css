@@ -12,6 +12,7 @@
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --overlay: rgba(33, 150, 243, 0.9);
   --ourwork: rgba(47, 48, 58, 0.8);
+  --duration: 250ms;
 }
 html {
   box-sizing: border-box;
@@ -64,6 +65,42 @@ body {
   text-decoration: none;
   padding: 10px 32px;
   border-radius: 4px;
+}
+.button2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-family: Roboto;
+  height: 38px;
+  background-color: var(--what-we-do-color);
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1, 9;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  border: none;
+}
+.button2:hover {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-family: Roboto;
+  height: 38px;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-size: 16px;
+  line-height: 1, 9;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
 }
 .white-title {
   display: block;
@@ -201,7 +238,7 @@ body {
 .social-ellipce:hover {
   background: var(--accent-color);
   fill: var(--primary-white-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 
@@ -222,13 +259,13 @@ body {
 .client-icons-item:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 .client-icons-item:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 ul {
@@ -259,7 +296,7 @@ p {
   position: relative;
   padding-bottom: 31px;
 }
-.menu::after {
+.menu2::after {
   content: '';
 
   display: block;
@@ -271,13 +308,10 @@ p {
 
   /* opacity: 0; */
   background-color: var(--accent-color);
-  transform: scaleX(0);
+  transform: scaleX(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu:hover::after {
-  /* opacity: 1; */
-  transform: scaleX(1);
-}
+
 .menu:hover {
   color: var(--accent-color);
 }
@@ -306,7 +340,7 @@ p {
 .link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 
@@ -315,12 +349,12 @@ p {
 }
 .contacts-svg:hover {
   color: var(--accent-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 .contacts-svg:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 
@@ -563,13 +597,13 @@ footer {
 .footer_ellipse:hover {
   background: var(--accent-color);
   fill: var(--primary-white-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 .footer_ellipse:focus {
   background: var(--accent-color);
   fill: var(--primary-white-color);
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 .footer-icons-item {
